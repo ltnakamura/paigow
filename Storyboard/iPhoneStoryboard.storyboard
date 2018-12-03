@@ -1,0 +1,1829 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="GDy-xU-xZp">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Home Screen View Controller - WelcomeView-->
+        <scene sceneID="cRx-8a-wyl">
+            <objects>
+                <viewController storyboardIdentifier="HomeScreen" title="WelcomeView" id="GDy-xU-xZp" customClass="HomeScreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pbL-NA-qwg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" image="GeeJoon-6.png" id="Qeb-zT-D7v">
+                                <rect key="frame" x="157" y="53" width="32" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" image="GeeJoon-3.png" id="e0o-zK-deF">
+                                <rect key="frame" x="120" y="53" width="32" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.64999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ERj-hM-B0B">
+                                <rect key="frame" x="63" y="216" width="196" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Practice Tile Names" backgroundImage="tile.png">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.25098040999999999" blue="0.50196081000000004" alpha="0.99000001000000004" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTrainTiles" destination="GDy-xU-xZp" eventType="touchUpInside" id="rSt-H0-IYL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.64999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mep-Ct-9jd">
+                                <rect key="frame" x="63" y="251" width="196" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Practice Tile Ranks" backgroundImage="tile.png">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTrainTilePosition" destination="GDy-xU-xZp" eventType="touchUpInside" id="rjm-E4-OXt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mbg-SQ-l2b">
+                                <rect key="frame" x="63" y="402" width="196" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Pai Gow Hands Strategy" backgroundImage="tile.png">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTrainHandRanks" destination="GDy-xU-xZp" eventType="touchUpInside" id="b8m-n6-2Iv"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="51B-CD-6h1">
+                                <rect key="frame" x="64" y="438" width="196" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Practice Pai Gow Tiles" backgroundImage="tile-green.png">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vPH-mm-FVj">
+                                <rect key="frame" x="63" y="309" width="196" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Compare Tile Ranks" backgroundImage="tile.png">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTrainTileRanks" destination="GDy-xU-xZp" eventType="touchUpInside" id="UTs-If-Ikv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PQL-D3-uj5">
+                                <rect key="frame" x="63" y="344" width="196" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Compare Pai Gow Hands" backgroundImage="tile.png">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTrainHands" destination="GDy-xU-xZp" eventType="touchUpInside" id="zyI-6z-Y63"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.64999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="POy-nP-kE4">
+                                <rect key="frame" x="63" y="163" width="196" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="About Pai Gow" backgroundImage="tile-green.png">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onIntro" destination="GDy-xU-xZp" eventType="touchUpInside" id="F01-Fk-qtf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Learn Pai Gow Tiles By Practice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="12" id="KSa-ky-Owy">
+                                <rect key="frame" x="55" y="196" width="210" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Introduce Yourself to Pai Gow Tiles" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="12" id="LKB-ju-FXd">
+                                <rect key="frame" x="55" y="143" width="210" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Learn Pai Gow Tile Rules and Hands" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="12" id="WuT-d2-5eb">
+                                <rect key="frame" x="57" y="287" width="210" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Test Your Pai Gow Hand Skills" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="12" id="edS-lg-yye">
+                                <rect key="frame" x="55" y="383" width="210" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" text="Pai Gow Tiles Tutor" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="16" id="lHY-UN-qTR">
+                                <rect key="frame" x="41" y="17" width="239" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAs-AV-kD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226" y="589"/>
+        </scene>
+        <!--Tile Practice View Controller-->
+        <scene sceneID="5AT-eC-RTE">
+            <objects>
+                <viewController storyboardIdentifier="TrainTilePositionScreen" id="hSL-ge-5xu" customClass="TilePracticeViewController" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4Zd-Ge-UA7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" text="Practice Pai Gow Dominos" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="16" id="VtY-OL-LgA">
+                                <rect key="frame" x="41" y="32" width="239" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="14" id="uLa-ms-MLG">
+                                <rect key="frame" x="16" y="95" width="288" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.90196078999999996" green="0.90196078999999996" blue="0.90196078999999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="dsE-ub-qjf">
+                                <rect key="frame" x="20" y="172" width="280" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000001000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mJx-Ne-uQq">
+                                <rect key="frame" x="197" y="439" width="111" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="New Set">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNewQuestionClick" destination="hSL-ge-5xu" eventType="touchUpInside" id="K4P-Jc-eSJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Utx-CC-fas">
+                                <rect key="frame" x="11" y="439" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBack" destination="hSL-ge-5xu" eventType="touchUpInside" id="9VJ-8O-8oJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" id="kq1-g5-Eje">
+                                <rect key="frame" x="24" y="201" width="272" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerExplain" destination="kq1-g5-Eje" id="OAp-Va-FQZ"/>
+                        <outlet property="answerStatus" destination="dsE-ub-qjf" id="UEO-mc-fPG"/>
+                        <outlet property="questionTile" destination="uLa-ms-MLG" id="Qcb-Hf-9fP"/>
+                        <outlet property="view" destination="4Zd-Ge-UA7" id="HKG-Qc-oeR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YSr-zy-rKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="959"/>
+        </scene>
+        <!--Pai Gow View Controller-->
+        <scene sceneID="G67-u9-BnG">
+            <objects>
+                <viewController storyboardIdentifier="TrainHandRankScreen" id="bCS-5T-MuR" customClass="PaiGowViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iPN-fG-A1Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Obn-OF-oSL" userLabel="PracticeHands">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <userGuides>
+                                    <userLayoutGuide location="39" affinity="minY"/>
+                                    <userLayoutGuide location="160" affinity="maxX"/>
+                                    <userLayoutGuide location="173" affinity="minY"/>
+                                </userGuides>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" alpha="0.30000000000000004" contentMode="center" image="guideline-halfres.png" id="8ik-aa-yjB">
+                                        <rect key="frame" x="25" y="59" width="268" height="131"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.49999999999999961" height="1"/>
+                                    </imageView>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eXt-ue-Qkl">
+                                        <rect key="frame" x="11" y="409" width="114" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Deal Random ">
+                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onDrawTilesClick" destination="bCS-5T-MuR" eventType="touchUpInside" id="ezj-Ph-nLe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VAe-tE-ckD">
+                                        <rect key="frame" x="201" y="409" width="105" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Choose Tiles">
+                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onChooseTilesClick" destination="bCS-5T-MuR" eventType="touchUpInside" id="BkY-7l-36i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NRT-nN-Xcf">
+                                        <rect key="frame" x="126" y="412" width="59" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Split">
+                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onCommit" destination="bCS-5T-MuR" eventType="touchUpInside" id="CLo-ec-Uda"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="npM-dU-EQr">
+                                        <rect key="frame" x="13" y="440" width="66" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBack" destination="bCS-5T-MuR" eventType="touchUpInside" id="K6V-4M-7uS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tWp-5u-QaJ">
+                                        <rect key="frame" x="234" y="440" width="72" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Help">
+                                            <color key="titleColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onHelpInfo" destination="bCS-5T-MuR" eventType="touchUpInside" id="Er2-w5-TU1"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" text="High    Hand" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="ESv-iV-MHU">
+                                        <rect key="frame" x="61" y="112" width="59" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" text="Low     Hand" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="cQa-k4-hfh">
+                                        <rect key="frame" x="197" y="114" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xCW-Zb-634">
+                                        <rect key="frame" x="126" y="412" width="72" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onReset" destination="bCS-5T-MuR" eventType="touchUpInside" id="cQb-z6-FzK"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="8" id="Pf8-HB-mpl">
+                                        <rect key="frame" x="57" y="202" width="210" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" text="Practice Pai Gow Hands" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="16" id="g0Z-OS-9bs">
+                                        <rect key="frame" x="23" y="29" width="275" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Using Foxwoods House Way" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jdf-Vl-NXe">
+                                        <rect key="frame" x="76" y="477" width="158" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Front"/>
+                                <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                                <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="chooseDone" destination="fcB-lp-kGn" id="MUA-bn-NzK"/>
+                        <outlet property="chooseTiles" destination="VAe-tE-ckD" id="oKf-Yf-Fy3"/>
+                        <outlet property="chooseView" destination="dQT-ED-3GR" id="FcQ-Ui-3vo"/>
+                        <outlet property="chosenTileLabel" destination="GbN-ft-Uqk" id="sOf-H0-ceV"/>
+                        <outlet property="commitButton" destination="NRT-nN-Xcf" id="eCW-Vo-bg7"/>
+                        <outlet property="drawTiles" destination="eXt-ue-Qkl" id="CYd-dW-eJJ"/>
+                        <outlet property="guideImage" destination="8ik-aa-yjB" id="72f-Y7-XJ7"/>
+                        <outlet property="mainView" destination="Obn-OF-oSL" id="Zn2-9k-ZUb"/>
+                        <outlet property="pairValues" destination="Pf8-HB-mpl" id="X4q-r1-oU9"/>
+                        <outlet property="resetButton" destination="xCW-Zb-634" id="GzW-KW-zKX"/>
+                        <outlet property="view" destination="iPN-fG-A1Q" id="V7n-Ps-CQB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifi-xg-aLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="dQT-ED-3GR" userLabel="ChooseDomino">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <userGuides>
+                        <userLayoutGuide location="96" affinity="minY"/>
+                        <userLayoutGuide location="18" affinity="minX"/>
+                    </userGuides>
+                    <subviews>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="1" contentMode="scaleToFill" image="GeeJoon-3.png" id="qyA-Dz-4Ix">
+                            <rect key="frame" x="20" y="45" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="2" contentMode="scaleToFill" image="GeeJoon-6.png" id="Psh-9S-Twf">
+                            <rect key="frame" x="55" y="45" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="3" contentMode="scaleToFill" image="Teen.png" id="k1i-1A-sR5">
+                            <rect key="frame" x="91" y="45" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="4" contentMode="scaleToFill" image="Teen.png" id="G0t-vx-Xcw">
+                            <rect key="frame" x="126" y="45" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="5" contentMode="scaleToFill" image="Day.png" id="3d0-PZ-w2O">
+                            <rect key="frame" x="161" y="45" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="6" contentMode="scaleToFill" image="Day.png" id="74U-ly-cB2">
+                            <rect key="frame" x="196" y="45" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="7" contentMode="scaleToFill" image="Yun.png" id="fSp-9X-cMy">
+                            <rect key="frame" x="232" y="45" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="8" contentMode="scaleToFill" image="Yun.png" id="5Wo-Up-TLV">
+                            <rect key="frame" x="267" y="45" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="9" contentMode="scaleToFill" image="Gor.png" id="En3-yK-hj2">
+                            <rect key="frame" x="20" y="134" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="10" contentMode="scaleToFill" image="Gor.png" id="0Xe-Bw-vpH">
+                            <rect key="frame" x="55" y="134" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="11" contentMode="scaleToFill" image="Mooy.png" id="kPT-f4-DF0">
+                            <rect key="frame" x="91" y="134" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="12" contentMode="scaleToFill" image="Mooy.png" id="brk-wV-QEg">
+                            <rect key="frame" x="126" y="134" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="13" contentMode="scaleToFill" image="Chong.png" id="LJX-Um-zMm">
+                            <rect key="frame" x="161" y="134" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="14" contentMode="scaleToFill" image="Chong.png" id="hQ3-ja-dUV">
+                            <rect key="frame" x="196" y="134" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="15" contentMode="scaleToFill" image="Bon.png" id="6TG-Ie-OTh">
+                            <rect key="frame" x="232" y="134" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="16" contentMode="scaleToFill" image="Bon.png" id="qYy-QW-YS1">
+                            <rect key="frame" x="267" y="134" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="17" contentMode="scaleToFill" image="Foo.png" id="h37-9H-wwH">
+                            <rect key="frame" x="20" y="223" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="18" contentMode="scaleToFill" image="Foo.png" id="3xm-qF-O07">
+                            <rect key="frame" x="55" y="223" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="19" contentMode="scaleToFill" image="Ping.png" id="lRV-S9-dgj">
+                            <rect key="frame" x="91" y="223" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="20" contentMode="scaleToFill" image="Ping.png" id="kxe-2m-vbA">
+                            <rect key="frame" x="126" y="223" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="21" contentMode="scaleToFill" image="Tit.png" id="lhd-j1-IRL">
+                            <rect key="frame" x="161" y="223" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="22" contentMode="scaleToFill" image="Tit.png" id="tHo-2k-hbC">
+                            <rect key="frame" x="196" y="223" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="23" contentMode="scaleToFill" image="Look.png" id="69u-Kn-8gy">
+                            <rect key="frame" x="232" y="223" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="24" contentMode="scaleToFill" image="Look.png" id="y0b-9l-qLw">
+                            <rect key="frame" x="267" y="223" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="25" contentMode="scaleToFill" image="ChopGow-L.png" id="UQ5-WA-rGO">
+                            <rect key="frame" x="20" y="313" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="26" contentMode="scaleToFill" image="ChopGow-R.png" id="QxN-sI-1EK">
+                            <rect key="frame" x="55" y="313" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="27" contentMode="scaleToFill" image="ChopBot-L.png" id="54J-LN-fDb">
+                            <rect key="frame" x="91" y="313" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="28" contentMode="scaleToFill" image="ChopBot-R.png" id="wHn-Hh-0T6">
+                            <rect key="frame" x="126" y="313" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="29" contentMode="scaleToFill" image="ChopChit-L.png" id="ZiO-HH-OeT">
+                            <rect key="frame" x="161" y="313" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="30" contentMode="scaleToFill" image="ChopChit-R.png" id="IWV-Xw-kpr">
+                            <rect key="frame" x="196" y="313" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="31" contentMode="scaleToFill" image="ChopNg-L.png" id="heR-Ty-vSr">
+                            <rect key="frame" x="232" y="313" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.54999999999999971" tag="32" contentMode="scaleToFill" image="ChopNg-R.png" id="Keh-5w-ilh">
+                            <rect key="frame" x="267" y="313" width="33" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KDj-Sb-ecH">
+                            <rect key="frame" x="7" y="401" width="100" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Reset Selected">
+                                <color key="titleColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onChooseReset" destination="bCS-5T-MuR" eventType="touchUpInside" id="BxM-76-yu6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jz2-MG-5Ma">
+                            <rect key="frame" x="112" y="401" width="96" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Set Houseway">
+                                <color key="titleColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onChooseAndSplitDone" destination="bCS-5T-MuR" eventType="touchUpInside" id="z43-ga-dQj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fcB-lp-kGn">
+                            <rect key="frame" x="214" y="401" width="100" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Use Selected">
+                                <color key="titleColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onChooseDone" destination="bCS-5T-MuR" eventType="touchUpInside" id="fon-OQ-G9H"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" text="Select Four Tiles (Tap)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="16" id="VbX-By-0Vc">
+                            <rect key="frame" x="41" y="13" width="239" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" id="Lvl-hh-dP8">
+                            <rect key="frame" x="13" y="440" width="57" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" id="GbN-ft-Uqk">
+                            <rect key="frame" x="74" y="439" width="246" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="PickATile"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="575" y="953"/>
+        </scene>
+        <!--Intro View Controller - IntroView-->
+        <scene sceneID="YKn-8L-WEv">
+            <objects>
+                <viewController storyboardIdentifier="IntroScreen" title="IntroView" id="6Om-2Q-FRp" customClass="IntroViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vhA-rt-G6S" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" alpha="0.74999999999999978" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="HgN-kn-71g">
+                                <rect key="frame" x="28" y="45" width="264" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Introduction"/>
+                                    <segment title="Cheat Sheet"/>
+                                    <segment title="Rule Sheet"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uyG-ZK-2nB">
+                                <rect key="frame" x="0.0" y="11" width="50" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBack" destination="6Om-2Q-FRp" eventType="touchUpInside" id="z4q-Jc-0Ub"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" text="About Pai Gow Tiles" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="16" id="QFB-RO-j7I">
+                                <rect key="frame" x="49" y="13" width="223" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="myScrollView" destination="Ry1-Q3-q7d" id="Qm5-e5-AMy"/>
+                        <outlet property="myScrollView2" destination="tCe-54-Ui7" id="Xp7-ET-bxD"/>
+                        <outlet property="myScrollView3" destination="66J-Ph-WXo" id="S2T-6f-Oeq"/>
+                        <outlet property="segmentBar" destination="HgN-kn-71g" id="u9P-kY-q3b"/>
+                        <outlet property="tableView" destination="E2m-wO-CsS" id="fXP-Xt-MLK"/>
+                        <outlet property="tileCell1" destination="42E-VN-Gyg" id="jzY-3d-Pi7"/>
+                        <outlet property="tileCell10" destination="bGJ-Qf-LFr" id="W1H-QI-J06"/>
+                        <outlet property="tileCell11" destination="6SK-HD-mcy" id="NBE-Qf-1ED"/>
+                        <outlet property="tileCell12" destination="gCG-0Y-lty" id="R3s-Q7-lDG"/>
+                        <outlet property="tileCell13" destination="d04-3C-1Mu" id="3bF-tR-uEs"/>
+                        <outlet property="tileCell14" destination="QJy-ZH-Z8s" id="8IX-YG-8eU"/>
+                        <outlet property="tileCell15" destination="4Dc-pQ-IYk" id="xBn-Rh-98X"/>
+                        <outlet property="tileCell16" destination="Cet-Op-wcd" id="Mbj-Sd-puB"/>
+                        <outlet property="tileCell2" destination="YQo-iY-Pag" id="5hX-cJ-vEf"/>
+                        <outlet property="tileCell3" destination="4Zw-Ek-TU0" id="6tV-D6-lSf"/>
+                        <outlet property="tileCell4" destination="eRR-oZ-nn9" id="ZkX-uh-mr0"/>
+                        <outlet property="tileCell5" destination="Ne5-d4-9Qy" id="4m8-6O-RHP"/>
+                        <outlet property="tileCell6" destination="NHH-AR-wsB" id="CMf-WY-fit"/>
+                        <outlet property="tileCell7" destination="WVe-Ng-L5B" id="W5W-b8-H0T"/>
+                        <outlet property="tileCell8" destination="S75-Ya-CAi" id="AME-Bu-oT9"/>
+                        <outlet property="tileCell9" destination="rhe-jb-SDx" id="8jL-4w-mD8"/>
+                        <outlet property="view" destination="vhA-rt-G6S" id="pf9-Jb-3gT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1t-P1-IEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" maximumZoomScale="3" id="tCe-54-Ui7" userLabel="RulesView">
+                    <rect key="frame" x="0.0" y="0.0" width="340" height="1442"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="GeeJoon-3.png" id="N6k-sU-3BV">
+                            <rect key="frame" x="44" y="99" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Yun.png" id="FeF-6I-bc7">
+                            <rect key="frame" x="43" y="266" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="GeeJoon-6.png" id="KcS-Mo-8ww">
+                            <rect key="frame" x="78" y="99" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="GeeJoon-6.png" id="agN-5Q-7zB">
+                            <rect key="frame" x="59" y="1051" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="GeeJoon-6.png" id="tKc-vl-aRb">
+                            <rect key="frame" x="115" y="1131" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Look.png" id="3WB-3b-JBk">
+                            <rect key="frame" x="133" y="99" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Look.png" id="UZE-hR-t5a">
+                            <rect key="frame" x="167" y="99" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopBot-L.png" id="J50-Cd-cIK">
+                            <rect key="frame" x="225" y="99" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopBot-R.png" id="BZq-Uz-9X8">
+                            <rect key="frame" x="259" y="99" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Any Pair is considered superior (in decreasing order of ranks) Examples:" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="xKF-Ws-Fdu">
+                            <rect key="frame" x="34" y="48" width="248" height="47"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text=">" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="v5o-VM-T3n">
+                            <rect key="frame" x="104" y="116" width="37" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text=">" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="k9z-ix-8G5">
+                            <rect key="frame" x="196" y="116" width="37" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Yun.png" id="CCr-pg-gDD">
+                            <rect key="frame" x="77" y="266" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Teen.png" id="WOF-Ld-OIS">
+                            <rect key="frame" x="132" y="266" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopGow-L.png" id="aqt-YA-alX">
+                            <rect key="frame" x="166" y="266" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Teen.png" id="OQb-z2-79r">
+                            <rect key="frame" x="36" y="437" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Teen.png" id="NbP-3D-FMV">
+                            <rect key="frame" x="45" y="819" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Teen.png" id="lf7-HK-Cac">
+                            <rect key="frame" x="191" y="1130" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopGow-L.png" id="T0h-aI-APV">
+                            <rect key="frame" x="70" y="437" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Day.png" id="vQQ-Pb-5qQ">
+                            <rect key="frame" x="218" y="266" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopGow-R.png" id="bGq-B3-cwb">
+                            <rect key="frame" x="252" y="266" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Wong comes next (Wong = 2/12 tile with 9 tile), Wongs are lower than pairs " textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="wnV-R6-gLN">
+                            <rect key="frame" x="6" y="220" width="329" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text=">" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="Nqg-9l-xQV">
+                            <rect key="frame" x="103" y="283" width="37" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text=">" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="DjE-fn-S6v">
+                            <rect key="frame" x="189" y="283" width="37" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Teen.png" id="a1V-f9-ckL">
+                            <rect key="frame" x="125" y="437" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopBot-L.png" id="cLK-pl-9GT">
+                            <rect key="frame" x="159" y="437" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopBot-L.png" id="ilB-g5-EFh">
+                            <rect key="frame" x="41" y="721" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Chong.png" id="HOi-cw-n5F">
+                            <rect key="frame" x="79" y="819" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Look.png" id="Tzb-HR-XRy">
+                            <rect key="frame" x="75" y="721" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Day.png" id="b3J-IR-fTz">
+                            <rect key="frame" x="211" y="437" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Yun.png" id="V4Y-zr-qe0">
+                            <rect key="frame" x="245" y="437" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Gong comes next (Gong = 2/12 tile with 8 tile) - Gongs are lower than Wongs (and Wongs lower than pairs) " textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="3Zd-6g-33i">
+                            <rect key="frame" x="23" y="370" width="287" height="69"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="In case of both Wong or Gong, the hand with the 12 tile is greater than the hand with a 2 tile" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="LfU-as-TJd">
+                            <rect key="frame" x="34" y="516" width="257" height="42"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="sss-nG-NFC">
+                            <rect key="frame" x="10" y="915" width="310" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">Again, in case of ties, the tie breaker is the rank of the highest rank tile, like here, the tied scores of 4 is broken by he higher Mooy Tile vs lower Ping Tile</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="MJg-1Y-EPD">
+                            <rect key="frame" x="96" y="1044" width="208" height="78"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">A hand with one of the Gee Joon Supreme tile can however be used as a wild card and their value can be switched between 3 and 6 whichever gives highest hand value</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="An example with GeeJoon being outranked as individual tile" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="AVp-uK-wJP">
+                            <rect key="frame" x="5" y="1240" width="310" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="When a hand is neither a pair, nor a wong, nor a gong, then its value is calculated by a formula as follows:" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="14" id="fEh-t4-UM7">
+                            <rect key="frame" x="39" y="566" width="257" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Illustration (for dealt pair below):" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="QPe-Qx-yi8">
+                            <rect key="frame" x="24" y="689" width="283" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Other examples:" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="tnF-Jc-czR">
+                            <rect key="frame" x="41" y="798" width="120" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="a5a-pL-Ie6">
+                            <rect key="frame" x="50" y="644" width="241" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.63868612000000002" green="0.79198902999999998" blue="0.79198902999999998" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <string key="text">A = (Dots on Tile #1) 
+  + (Dots on Tile #2)
+</string>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="highlightedColor" red="1" green="1" blue="0.60000001999999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="Oym-YJ-dze">
+                            <rect key="frame" x="141" y="721" width="165" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <string key="text">Value = (8 + 6) % 10 
+</string>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="9c0-LC-25p">
+                            <rect key="frame" x="141" y="742" width="165" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <string key="text">      = (14) % 10 = 4 
+</string>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="x%y = remainder of x/y" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="2qi-fM-pNk">
+                            <rect key="frame" x="167" y="767" width="139" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="10"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Value 9" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="THw-Wc-g9K">
+                            <rect key="frame" x="54" y="882" width="56" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Value = Units place of Sum of Dots &quot;A&quot;" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="A2T-D9-tiv">
+                            <rect key="frame" x="20" y="624" width="299" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.63868612000000002" green="0.79198902999999998" blue="0.79198902999999998" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="highlightedColor" red="0.60000001999999997" green="0.60000001999999997" blue="0.60000001999999997" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text=">" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="3j9-cD-h8I">
+                            <rect key="frame" x="96" y="454" width="37" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text=">" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="o14-8M-C4t">
+                            <rect key="frame" x="112" y="836" width="20" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Mooy.png" id="us4-NR-rRc">
+                            <rect key="frame" x="131" y="819" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Bon.png" id="08m-18-RwA">
+                            <rect key="frame" x="165" y="819" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Value 4" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="Txm-6d-ivv">
+                            <rect key="frame" x="225" y="883" width="56" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text=">" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="1fO-ab-RmO">
+                            <rect key="frame" x="198" y="836" width="20" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Ping.png" id="6T5-hf-OTg">
+                            <rect key="frame" x="224" y="819" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Gor.png" id="Xfj-go-96F">
+                            <rect key="frame" x="258" y="819" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Value 4" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="kJI-by-j29">
+                            <rect key="frame" x="139" y="883" width="56" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text=">" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="ioo-iw-8sM">
+                            <rect key="frame" x="182" y="454" width="37" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="GeeJoon-3.png" id="Yro-nz-NCj">
+                            <rect key="frame" x="25" y="1051" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="GeeJoon-3.png" id="tOb-pI-uLT">
+                            <rect key="frame" x="226" y="1130" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="5Rg-KK-gOU">
+                            <rect key="frame" x="70" y="1195" width="83" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <string key="text">Value 7 
+(not 0)</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Value 8" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="MuC-H3-QAy">
+                            <rect key="frame" x="70" y="1361" width="83" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="8 with winning tiebreaker" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="gh4-QC-PyO">
+                            <rect key="frame" x="176" y="1361" width="83" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="&lt;" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="VnL-RN-gzz">
+                            <rect key="frame" x="159" y="1143" width="20" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="&lt;" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="17" id="NKT-bl-Pes">
+                            <rect key="frame" x="157" y="1304" width="20" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="hE4-BJ-hcp">
+                            <rect key="frame" x="203" y="1198" width="56" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <string key="text">Value 8
+(not 5)</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Gor.png" id="Hf7-n4-tvE">
+                            <rect key="frame" x="81" y="1130" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="GeeJoon pair" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="gHQ-6c-8Rs">
+                            <rect key="frame" x="36" y="170" width="81" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Look pair" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="ZBk-bP-FmP">
+                            <rect key="frame" x="127" y="170" width="78" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="ChopBot pair" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="O8m-5z-IdG">
+                            <rect key="frame" x="218" y="170" width="78" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Yun (or any) Pair" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="rd6-dg-liT">
+                            <rect key="frame" x="29" y="330" width="91" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Teen-Gow Wong" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="U9h-ui-NWi">
+                            <rect key="frame" x="128" y="332" width="74" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Day-Gow Wong" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="8Ll-iv-5lx">
+                            <rect key="frame" x="207" y="333" width="83" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Wong" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="b4I-wM-0IX">
+                            <rect key="frame" x="20" y="495" width="91" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Gong" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="fH5-tb-EtT">
+                            <rect key="frame" x="121" y="501" width="68" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Gong (with Day)" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="4" id="5Fl-by-UfZ">
+                            <rect key="frame" x="196" y="501" width="114" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With exception of the GeeJoon (which is demoted as lowest rank for tie breakers - when comparing with equal Value Tiles) " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dOg-QO-HeK">
+                            <rect key="frame" x="17" y="975" width="308" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Teen.png" id="xbp-W1-Lz8">
+                            <rect key="frame" x="81" y="1286" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Teen.png" id="Wa0-y6-JNk">
+                            <rect key="frame" x="189" y="1286" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Chong.png" id="yzd-rz-2L7">
+                            <rect key="frame" x="223" y="1286" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="GeeJoon-6.png" id="hWn-d3-96N">
+                            <rect key="frame" x="114" y="1286" width="30" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="6Om-2Q-FRp" id="B2x-0p-O6m"/>
+                    </connections>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" maximumZoomScale="3" id="66J-Ph-WXo" userLabel="CheatSheetView">
+                    <rect key="frame" x="0.0" y="1110" width="320" height="640"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" allowsSelection="NO" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="1" id="E2m-wO-CsS">
+                            <rect key="frame" x="0.0" y="20" width="320" height="640"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="separatorColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="0.48999999999999999" colorSpace="calibratedRGB"/>
+                            <color key="sectionIndexTrackingBackgroundColor" red="0.59999999999999998" green="1" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <sections>
+                                <tableViewSection headerTitle="Paigow Tiles List" id="Dg7-Ag-IPO">
+                                    <cells>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="42E-VN-Gyg">
+                                            <rect key="frame" x="0.0" y="22" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="42E-VN-Gyg" id="kEs-pW-N1R">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="GeeJoon-3.png" id="W7R-PC-PgQ">
+                                                        <rect key="frame" x="50" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="GeeJoon-6.png" id="Xj9-Xb-Efm">
+                                                        <rect key="frame" x="12" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="esn-TB-iSf">
+                                                        <rect key="frame" x="95" y="1" width="225" height="98"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <string key="text">Gee Joon Pair  (3-6 Supreme)
+Pair Rank = 1 
+Number of dots = 3 dots or 6 dots - whichever make highest valued hand.
+By themselves these tiles are ranked lowest (for tie breakers)</string>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <string key="userLabel">Label - Gee Joon Pair  (3-6 Supreme) Pair Rank = 1  Number of dots = 3/6 can be used as a wildcard - either as a 3 or a 6 to make highest valued hand. Alone this tile is ranked lowest (for tie breakers)</string>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="YQo-iY-Pag">
+                                            <rect key="frame" x="0.0" y="122" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YQo-iY-Pag" id="7w2-2U-dVd">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Teen.png" id="L95-QQ-3QJ">
+                                                        <rect key="frame" x="12" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Teen.png" id="Zqz-va-ZR8">
+                                                        <rect key="frame" x="50" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="5Yg-yY-SSl">
+                                                        <rect key="frame" x="95" y="5" width="225" height="89"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <string key="text">Teen Pair (Heaven)
+Pair Rank = 2 
+Number of dots = 12 (effectively 2)
+Gong when paired with 9 dots
+Wong when paired with 8 dots</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="4Zw-Ek-TU0">
+                                            <rect key="frame" x="0.0" y="222" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Zw-Ek-TU0" id="fpI-Wa-36r">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Day.png" id="GOD-9G-bg5">
+                                                        <rect key="frame" x="12" y="6" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Day.png" id="NmD-uP-6RQ">
+                                                        <rect key="frame" x="50" y="6" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="1J9-lX-RVj">
+                                                        <rect key="frame" x="95" y="0.0" width="225" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Day Pair (Earth)
+Pair Rank = 3 
+Number of dots = 2
+Gong when paired with 9 dots
+Wong when paired with 8 dots
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="eRR-oZ-nn9">
+                                            <rect key="frame" x="0.0" y="322" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eRR-oZ-nn9" id="66M-Qr-mbg">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Yun.png" id="uDj-dY-afP">
+                                                        <rect key="frame" x="51" y="4" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Yun.png" id="SM7-mh-eSH">
+                                                        <rect key="frame" x="12" y="4" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="sXg-xI-rBC">
+                                                        <rect key="frame" x="95" y="-7" width="213" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Yun Pair (Man)
+Pair Rank = 4 
+Number of dots = 8
+Combine with Teen/Day as a Wong
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="Ne5-d4-9Qy">
+                                            <rect key="frame" x="0.0" y="422" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ne5-d4-9Qy" id="d0i-7i-VjA">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Gor.png" id="7Cm-EL-tqZ">
+                                                        <rect key="frame" x="51" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Gor.png" id="khX-5P-w9r">
+                                                        <rect key="frame" x="12" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="0fi-es-4ZZ">
+                                                        <rect key="frame" x="95" y="-6" width="200" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Gor Pair (Goose)
+Pair Rank = 5
+Number of dots = 4
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="NHH-AR-wsB">
+                                            <rect key="frame" x="0.0" y="522" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NHH-AR-wsB" id="Q7l-Ri-ox9">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Mooy.png" id="dcd-E4-FLd">
+                                                        <rect key="frame" x="12" y="3" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="cg1-1Q-BnD">
+                                                        <rect key="frame" x="95" y="-11" width="214" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Mooy Pair (Flower)
+Pair Rank = 6 
+Number of dots = 10 (effectively 0)</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Mooy.png" id="Rbf-Ko-YMq">
+                                                        <rect key="frame" x="51" y="3" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="WVe-Ng-L5B">
+                                            <rect key="frame" x="0.0" y="622" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WVe-Ng-L5B" id="WY8-ul-ijt">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Chong.png" id="zC1-er-uV8">
+                                                        <rect key="frame" x="12" y="3" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Chong.png" id="OAS-Ew-zxs">
+                                                        <rect key="frame" x="51" y="3" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="MSo-Pa-g85">
+                                                        <rect key="frame" x="95" y="-8" width="200" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Chong Pair (Long)
+Pair Rank = 7 
+Number of dots = 6
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="S75-Ya-CAi">
+                                            <rect key="frame" x="0.0" y="722" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S75-Ya-CAi" id="Rqv-WW-EuU">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Bon.png" id="2x7-Lh-xaP">
+                                                        <rect key="frame" x="12" y="3" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Bon.png" id="UFo-Cs-9HK">
+                                                        <rect key="frame" x="51" y="3" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="QOd-01-Jh5">
+                                                        <rect key="frame" x="95" y="-8" width="200" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Bon Pair (Board)
+Pair Rank = 8 
+Number of dots = 4</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="rhe-jb-SDx">
+                                            <rect key="frame" x="0.0" y="822" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rhe-jb-SDx" id="rE5-7z-K5y">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Foo.png" id="pW7-JS-7QV">
+                                                        <rect key="frame" x="12" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Foo.png" id="WwT-16-ezU">
+                                                        <rect key="frame" x="51" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="trg-nz-Msi">
+                                                        <rect key="frame" x="95" y="-6" width="215" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Foo Pair (Hatchet)
+Pair Rank = 9
+Number of dots = 11 (effectively 1)
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="bGJ-Qf-LFr">
+                                            <rect key="frame" x="0.0" y="922" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bGJ-Qf-LFr" id="pco-du-pXN">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="DfA-8Q-Tga">
+                                                        <rect key="frame" x="95" y="-5" width="211" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Ping Pair (Partition)
+Pair Rank = 10 
+Number of dots = 10 (Effectively 0)
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Ping.png" id="iPm-KZ-mTh">
+                                                        <rect key="frame" x="51" y="6" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Ping.png" id="08y-uv-sgF">
+                                                        <rect key="frame" x="12" y="6" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="6SK-HD-mcy">
+                                            <rect key="frame" x="0.0" y="1022" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6SK-HD-mcy" id="jfm-iM-goF">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Tit.png" id="7PV-a3-GDq">
+                                                        <rect key="frame" x="12" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Tit.png" id="EgQ-12-0ua">
+                                                        <rect key="frame" x="51" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="YWb-qJ-sn0">
+                                                        <rect key="frame" x="95" y="-6" width="200" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Tit Pair (Long Leg 7)
+Pair Rank = 11 
+Number of dots = 7
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="gCG-0Y-lty">
+                                            <rect key="frame" x="0.0" y="1122" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gCG-0Y-lty" id="RFs-hQ-Lex">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Look.png" id="3UH-FE-5Vc">
+                                                        <rect key="frame" x="51" y="4" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Look.png" id="ykB-Nu-TwP">
+                                                        <rect key="frame" x="12" y="4" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="vOG-Rz-K5t">
+                                                        <rect key="frame" x="95" y="-7" width="200" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Look Pair (Big Head 6)
+Pair Rank = 12 
+Number of dots = 5</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="d04-3C-1Mu">
+                                            <rect key="frame" x="0.0" y="1222" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d04-3C-1Mu" id="DTV-kT-V9C">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopGow-R.png" id="76H-c5-sxX">
+                                                        <rect key="frame" x="12" y="6" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="Zlm-Hz-H9D">
+                                                        <rect key="frame" x="95" y="-6" width="211" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Chop Gow Pair (Gow/ Mixed 9)
+Pair Rank = 13
+Number of dots = 9
+Combine with Teen/Day as a Gong
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopGow-L.png" id="zsj-as-eri">
+                                                        <rect key="frame" x="51" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="QJy-ZH-Z8s">
+                                            <rect key="frame" x="0.0" y="1322" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QJy-ZH-Z8s" id="WvG-Xn-2NK">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopBot-R.png" id="hEs-iH-Dgx">
+                                                        <rect key="frame" x="52" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopBot-L.png" id="HJz-5b-p4M">
+                                                        <rect key="frame" x="13" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="Uwv-dA-caI">
+                                                        <rect key="frame" x="96" y="-8" width="211" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">ChopBot Pair (Bot/Mixed 8)
+Pair Rank = 14 
+Number of dots = 8
+Combine with Teen/Day as a Wong
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="4Dc-pQ-IYk">
+                                            <rect key="frame" x="0.0" y="1422" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Dc-pQ-IYk" id="Fen-vf-P10">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopChit-R.png" id="jFV-3s-4l5">
+                                                        <rect key="frame" x="53" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopChit-L.png" id="nai-4D-S7a">
+                                                        <rect key="frame" x="13" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="XG6-rh-IAL">
+                                                        <rect key="frame" x="97" y="-8" width="211" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">ChopChit Pair (Chit/ Mixed 7/ Chi)
+Pair Rank = 15 
+Number of dots = 7
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="Cet-Op-wcd">
+                                            <rect key="frame" x="0.0" y="1522" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cet-Op-wcd" id="8X2-51-qLR">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopNg-R.png" id="i3z-ZP-bAN">
+                                                        <rect key="frame" x="15" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ChopNg-L.png" id="EbU-ju-tKB">
+                                                        <rect key="frame" x="54" y="5" width="36" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="12" id="8ob-xM-20l">
+                                                        <rect key="frame" x="98" y="-6" width="200" height="115"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">ChopNg Pair (Ng/Mixed 5)
+Pair Rank = 16 
+Number of dots = 5</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </tableViewCellContentView>
+                                            <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCell>
+                                    </cells>
+                                </tableViewSection>
+                            </sections>
+                            <connections>
+                                <outlet property="dataSource" destination="6Om-2Q-FRp" id="SUG-27-lcO"/>
+                                <outlet property="delegate" destination="6Om-2Q-FRp" id="Tqt-8Z-gpQ"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" maximumZoomScale="3" bouncesZoom="NO" id="Ry1-Q3-q7d" userLabel="IntroScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="550"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="10" id="Yik-dJ-lfv">
+                            <rect key="frame" x="14" y="51" width="293" height="822"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">Pai Gow (Chinese: 牌九 pronounced "pie jau") is a Chinese gambling game, played with a set of Chinese dominoes.
+Pai gow loosely translates to "make nine" and was the basis for games like chemin de fer and baccarat.
+Tiles are randomized on the table, and are stacked into eight stacks of four tiles each in an assembly known as the woodpile. Various ritualistic "shuffles" are made, rearranging the tiles in the woodpile in standard ways that result in a new woodpile. Bets are then made.
+
+Next, each player (including the dealer) is given four tiles with which to make two hands of two tiles each. The hand with the lower value is called the front hand, and the hand with the higher value is called the rear hand. If a player's front hand beats the dealer's front hand, and the player's rear hand beats the dealer's rear hand, then that player wins the bet. If a player's front and rear hands both lose to the dealer's respective hands, the player loses the bet. If one hand wins and the other loses, the player is said to push, and gets back only the money he or she bet. Generally seven players will play, and each player's hands are compared only against the dealer's hands.
+
+This application is designed to provide tools in the form of automated Pop Quizzes and Paigow Hands selection games. This interactive tutorial is designed to be used completely offline. No need of internet connection 
+- take your practice wherever you go. Enjoy learning and teaching Paigow using Paigow Tutor!
+</string>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" red="1" green="0.80000000999999998" blue="0.40000001000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction to Pai Gow Tiles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tWq-ny-ml6">
+                            <rect key="frame" x="45" y="6" width="222" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="contentInset" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="delegate" destination="6Om-2Q-FRp" id="LQ1-Vb-lFu"/>
+                    </connections>
+                </scrollView>
+            </objects>
+            <point key="canvasLocation" x="158" y="280"/>
+        </scene>
+        <!--Tile Picker View Controller-->
+        <scene sceneID="Qmo-zY-11G">
+            <objects>
+                <viewController storyboardIdentifier="TrainHandsScreen" id="Jt1-PW-RRI" customClass="TilePickerViewController" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="nQV-2Q-b60">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="RiE-cU-sG0">
+                                <rect key="frame" x="20" y="130" width="280" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.90196078999999996" green="0.90196078999999996" blue="0.90196078999999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pIO-eY-ckZ">
+                                <rect key="frame" x="195" y="435" width="108" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="New Set">
+                                    <color key="titleColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNewQuestionClick" destination="Jt1-PW-RRI" eventType="touchUpInside" id="8xw-I4-6uK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AqK-1P-xm9">
+                                <rect key="frame" x="15" y="435" width="67" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBack" destination="Jt1-PW-RRI" eventType="touchUpInside" id="Pqa-iz-Aot"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="8" id="8H5-9V-pMV">
+                                <rect key="frame" x="24" y="171" width="272" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" text="Practice by Comparison" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="16" id="yox-r7-DmN">
+                                <rect key="frame" x="27" y="29" width="267" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" playsSound="YES"/>
+                        </accessibility>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerStatus" destination="8H5-9V-pMV" id="BE0-fr-FBV"/>
+                        <outlet property="questionTile" destination="RiE-cU-sG0" id="uRi-sK-MX2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbt-u0-ozS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="280"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bon.png" width="282" height="762"/>
+        <image name="Chong.png" width="282" height="762"/>
+        <image name="ChopBot-L.png" width="282" height="762"/>
+        <image name="ChopBot-R.png" width="282" height="762"/>
+        <image name="ChopChit-L.png" width="282" height="762"/>
+        <image name="ChopChit-R.png" width="282" height="762"/>
+        <image name="ChopGow-L.png" width="280" height="762"/>
+        <image name="ChopGow-R.png" width="282" height="762"/>
+        <image name="ChopNg-L.png" width="282" height="762"/>
+        <image name="ChopNg-R.png" width="282" height="762"/>
+        <image name="Day.png" width="282" height="762"/>
+        <image name="Foo.png" width="282" height="760"/>
+        <image name="GeeJoon-3.png" width="282" height="762"/>
+        <image name="GeeJoon-6.png" width="282" height="762"/>
+        <image name="Gor.png" width="282" height="762"/>
+        <image name="Look.png" width="282" height="762"/>
+        <image name="Mooy.png" width="282" height="762"/>
+        <image name="Ping.png" width="282" height="760"/>
+        <image name="Teen.png" width="282" height="762"/>
+        <image name="Tit.png" width="282" height="760"/>
+        <image name="Yun.png" width="282" height="762"/>
+        <image name="guideline-halfres.png" width="268" height="136"/>
+        <image name="tile-green.png" width="500" height="151"/>
+        <image name="tile.png" width="500" height="151"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
